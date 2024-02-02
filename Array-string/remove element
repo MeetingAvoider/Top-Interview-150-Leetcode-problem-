@@ -1,0 +1,20 @@
+// using two pointers approach to solve this problem
+// time complexity is O(N) and space is O(1)
+class Solution
+{
+public:
+    int removeElement(vector<int> &nums, int val)
+    {
+        int count = 0;
+        int j = 0;
+        for (int i = 0; i < nums.size(); i++)
+        {
+            if (nums[i] != val)
+            {
+                nums[j++] = nums[i];
+                count++;
+            }
+        }
+        return count;
+    }
+};

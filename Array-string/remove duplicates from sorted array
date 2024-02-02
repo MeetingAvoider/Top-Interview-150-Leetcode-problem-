@@ -1,0 +1,17 @@
+// using two pointers array
+class Solution
+{
+public:
+    int removeDuplicates(vector<int> &nums)
+    {
+        int j = 1; // because one elements is always sorted thats why j is starting from one
+        for (int i = 1; i < nums.size(); i++)
+        {
+            if ((nums[i] != nums[i - 1]))
+            {
+                nums[j++] = nums[i];
+            }
+        }
+        return j;
+    }
+};
