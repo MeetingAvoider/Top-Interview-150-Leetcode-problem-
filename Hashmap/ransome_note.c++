@@ -16,7 +16,7 @@ public:
             freq_mag[c - 'a']++;
         }
 
-        for (int i = 0; i < 26; i++)
+        for (int i = 0; i < 26; ++i)
         {
             if (freq_rans[i] > freq_mag[i])
             {
